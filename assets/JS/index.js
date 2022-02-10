@@ -31,13 +31,13 @@
 
 // const arr = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
 
-// let result = 0;
+// const filtered = arr.filter((num) => {
+//     return num % 2 !== 0;
+//  });
 
-// arr.forEach(function(num) {
-//     if(num % 2 !== 0) {
-//         result += num;
-//     }
-// })
+// const result = filtered.reduce((accumulator, currentValue) => {
+//     return accumulator + currentValue;
+// }, 0);
 
 // console.log(result);
 
@@ -65,22 +65,49 @@ for (i = 1; i <= 15; i++) {
     users.push(user);
 }
 
+// console.log(users);
+
+/////////////////////////////////////////////////
+//var 2
+
+// users.forEach((value, index, array) => {
+
+//     let valueArr = Array.from(value);
+
+//     if (valueArr.includes('2')) {
+//         array.splice(index, 1);
+//     }
+
+//     if (valueArr.includes('4')) {
+//         array.splice(index, 1);
+//     }
+// });
+
+// users.forEach((value, index, array) => {
+
+//     let valueArr = Array.from(value);
+
+//     if (valueArr.includes('3')) {
+//         array.splice(index, 1);
+//     }
+// });
+
 console.log(users);
+
+///////////////////////////////////////////////
+// var1
 
 users.forEach((value, index, array) => {
 
     let valueArr = Array.from(value);
 
-    // console.log(valueArr);
-
     if (valueArr.some((elem) => elem === '2')) {
         array.splice(index, 1);
     };
 
-    console.log(value);
-
+    if (valueArr.some((elem) => elem === '4')) {
+        array.splice(index, 1);
+    };
 });
 
 console.log(users);
-
-// || elem === '3' || elem === '4'
