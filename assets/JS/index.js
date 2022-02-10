@@ -71,17 +71,16 @@ users.forEach((value, index, array) => {
 
     let valueArr = Array.from(value);
 
-    console.log(valueArr);
+    // console.log(valueArr);
 
-    let deleted = 
-    
-    console.log(valueArr.find((elem, ind, arr) => {
-        if (elem === '2') {
-            array.splice(index, 1);
-        }
-    }));
+    if (valueArr.some((elem) => elem === '2')) {
+        array.splice(index, 1);
+    };
 
-    console.log(indexA);
+    console.log(value);
+
 });
 
 console.log(users);
+
+// || elem === '3' || elem === '4'
