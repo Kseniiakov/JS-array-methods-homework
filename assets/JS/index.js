@@ -93,21 +93,3 @@ for (i = 1; i <= 15; i++) {
 // });
 
 console.log(users);
-
-///////////////////////////////////////////////
-// var1
-
-users.forEach((value, index, array) => {
-
-    let valueArr = Array.from(value);
-
-    if (valueArr.some((elem) => elem === '2')) {
-        array.splice(index, 1);
-    };
-
-    if (valueArr.some((elem) => elem === '4')) {
-        array.splice(index, 1);
-    };
-});
-
-console.log(users);
