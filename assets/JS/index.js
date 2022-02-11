@@ -8,16 +8,6 @@
 
 // console.log(oldArray);
 
-// var 2
-
-// const oldArray = [1,2,3,4];
-
-// const newArray = [5,6,7,8,9,10];
-
-// const resultArray = oldArray.concat(newArray);
-
-// console.log(resultArray);
-
 // 2. Дан массив чисел [4, 9, 16, 25, 36, 49]. 
 // На его основе создать массив с квадратными корнями чисел (Math.sqrt)
 
@@ -58,17 +48,12 @@
 // Пример (подчёркнутые должны быть удалены)
 // [ "user1", _"user2"_, _"user3"_, _"user4"_, "user5", ..., _"user12"_ ]
 
-const users = [];
+// const users = [];
 
-for (i = 1; i <= 15; i++) {
-    let user = `user${i}`;
-    users.push(user);
-}
-
-// console.log(users);
-
-/////////////////////////////////////////////////
-//var 2
+// for (i = 1; i <= 15; i++) {
+//     let user = `user${i}`;
+//     users.push(user);
+// }
 
 // users.forEach((value, index, array) => {
 
@@ -92,4 +77,4 @@ for (i = 1; i <= 15; i++) {
 //     }
 // });
 
-console.log(users);
+// console.log(users);
