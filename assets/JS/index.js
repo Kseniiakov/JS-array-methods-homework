@@ -4,9 +4,9 @@
 
 // const newArray = [5,6,7,8,9,10];
 
-// oldArray.push(newArray);
+// const result = oldArray.concat(newArray);
 
-// console.log(oldArray);
+// console.log(result);
 
 // 2. Дан массив чисел [4, 9, 16, 25, 36, 49]. 
 // На его основе создать массив с квадратными корнями чисел (Math.sqrt)
@@ -53,28 +53,23 @@
 // for (i = 1; i <= 15; i++) {
 //     let user = `user${i}`;
 //     users.push(user);
-// }
+// };
 
-// users.forEach((value, index, array) => {
+// function deleteCells(arr) {
+//     for(i = 0; i <= arr.length; i++) {
+//         if(String(arr[i]).endsWith('2')) {
+//             arr.splice(i, 1);
+//         };
+//         if(String(arr[i]).endsWith('3')) {
+//             arr.splice(i, 1);
+//         };
+//         if(String(arr[i]).endsWith('4')) {
+//             arr.splice(i, 1);
+//         };
+//     };
+//     return arr;
+// };
 
-//     let valueArr = Array.from(value);
+// const result = deleteCells(users);
 
-//     if (valueArr.includes('2')) {
-//         array.splice(index, 1);
-//     }
-
-//     if (valueArr.includes('4')) {
-//         array.splice(index, 1);
-//     }
-// });
-
-// users.forEach((value, index, array) => {
-
-//     let valueArr = Array.from(value);
-
-//     if (valueArr.includes('3')) {
-//         array.splice(index, 1);
-//     }
-// });
-
-// console.log(users);
+// console.log(result);
